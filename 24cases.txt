@@ -1,0 +1,36 @@
+(Ignoring Jokers)
+
+all distinct
+13C4 => 715
+
+1 pair + 2 distinct
+13 * 12C2 => 858
+
+2 pairs
+13C2 => 78
+
+1 triple + 1 single
+13P2 => 156
+
+all 4 same
+13
+
+1898
+
+////////////////////////////////////////////////////////////////
+For 5
+
+all distinct
+5C4 => 5
+
+1 pair + 2 distinct
+5 * 4C2 => 30
+
+2 pairs
+5C2 => 10
+
+1 triple + 1 single
+5P2 => 20
+
+all 4 same
+5
