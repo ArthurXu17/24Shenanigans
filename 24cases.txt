@@ -38,6 +38,61 @@ all 4 same
 
 2366
 
+///////////////////////////////////////////////////////////////
+
+8 card version (with joker)
+
+all distinct
+
+14C8 => 3003
+
+1 pair remaining 6 distinct
+
+14 * 13C6 => 24024
+
+2 pair remaining 4 distinct
+
+14C2 * 12C4 => 45045
+
+3 pair remaining 2 distinct
+
+14C3 * 11C2 => 20020
+
+4 pairs
+14C4 => 1001
+
+1 triple 5 distinct
+13 (triple without joker) * 13C5 (choose 5 from remaining 13) => 16731
+
+1 triple, 1 pair, 3 distinct
+13 (triple) * 13 (pair including joker) * 12C3 => 37180
+
+1 triple, 2 pair, 1 distinct
+13 * 13C2 * 11 => 11154
+
+2 triple, 2 distinct
+13C2*12C2 => 5148
+
+2 triple, 1 pair
+13C2 * 12 => 936
+
+1 quad, 4 distinct
+13 * 13C4 => 9295
+
+1 quad, 1 pair, 2 distinct
+13 * 13 * 12C2 => 11154
+
+1 quad, 2 pair
+13 * 13C2 => 1014
+
+1 quad, 1 triple, 1 distinct
+13*12*12 = 1872
+
+2 quad
+
+13C2 = 78
+
+3003 + 24024 + 45045 + 20020 + 1001 + 16731 + 37180 + 11154 + 5148 + 936 + 9295 + 11154 + 1014 + 1872 + 78 = 187655
 ////////////////////////////////////////////////////////////////
 For 5
 

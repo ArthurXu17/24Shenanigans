@@ -2,7 +2,14 @@
 #include <vector>
 #include "multisubsetGenerator.cc"
 
+void distinguish(vector<vector<int>>& result) {
+    for (auto & vec: result) {
+
+    }
+}
+
 int main() {
+    /*
     vector<int> test = {1,3,3,4,5,5,7};
     MultisetGenerator testGenerator = MultisetGenerator(test, 4);
     testGenerator.allMultisets();
@@ -14,6 +21,12 @@ int main() {
     }
     test2.push_back(14);
     test2.push_back(14);
-    testGenerator = MultisetGenerator(test2, 4);
-    cout<<testGenerator.allMultisets().size()<<endl;
+    testGenerator = MultisetGenerator(test2, 8);
+    vector<vector<int>> result = testGenerator.allMultisets();
+    cout<<result.size()<<endl;*/
+
+    vector<int> set = {0,1,2,3,4,5,6,7};
+    MultisetGenerator permGen = MultisetGenerator(set, 4);
+    auto result = permGen.allMultisets();
+    cout<<result.size()<<endl;
 }
