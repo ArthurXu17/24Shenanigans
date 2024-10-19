@@ -1,6 +1,7 @@
 #include <iostream>
 #include "solver.cc"
 #include "cardGenerator.cc"
+#include "multisubsetGenerator.cc"
 #include <unordered_set>
 #include <ctime>
 #include <string>
@@ -35,9 +36,17 @@ string getSolutionString(vector<int>& nums, char op1, char op2, char op3, vector
 }
 
 void solveBase24() {
+    vector<int> deck;
+    for (int i = 1; i <= 13; i++) {
+        for (int j = 1; j <= 4; j++) {
+            deck.push_back(i);
+        }
+    }
+    deck.push_back(14);
+    deck.push_back(14);
     DoubleSolver solver = DoubleSolver();
-    CardGenerator generator = CardGenerator(1,13,4);
-    auto result = generator.allSets();
+    MultisetGenerator generator = MultisetGenerator(deck,4);
+    auto result = generator.allMultisets();
     cout<<result.size()<<endl;
     std::ofstream outputFile;
     outputFile.open("base24Results.csv");

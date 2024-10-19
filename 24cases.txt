@@ -15,7 +15,28 @@ all distinct
 all 4 same
 13
 
-1898
+1820
+
+///////////////////////////////////////////////////////////////
+
+Adding jokers
+
+all distinct
+14C4 => 1001
+
+1 pair + 2 distinct
+14 * 13C2 => 1092
+
+2 pairs
+14C2 => 91
+
+1 triple + 1 single
+13P2 (no joker) + 13 (with joker single) = 169
+
+all 4 same
+13
+
+2366
 
 ////////////////////////////////////////////////////////////////
 For 5
